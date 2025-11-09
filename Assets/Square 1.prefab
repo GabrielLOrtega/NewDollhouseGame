@@ -11,8 +11,13 @@ GameObject:
   - component: {fileID: 9180555517454927830}
   - component: {fileID: 3265841748573877948}
   - component: {fileID: -7971095337730926937}
+<<<<<<< HEAD
   - component: {fileID: -6556598949510261058}
   - component: {fileID: -4631890034606170009}
+=======
+  - component: {fileID: 1798829851158958325}
+  - component: {fileID: -1516716684446691512}
+>>>>>>> 8107c6db90fa5f9e70b34c3beb672d6a58612921
   m_Layer: 0
   m_Name: Square 1
   m_TagString: Damageable
@@ -100,7 +105,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+<<<<<<< HEAD
 --- !u!65 &-6556598949510261058
+=======
+--- !u!65 &1798829851158958325
+>>>>>>> 8107c6db90fa5f9e70b34c3beb672d6a58612921
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,9 +120,15 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 5.12, y: 5.12, z: 2.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &-4631890034606170009
+=======
+  m_Size: {x: 5.12, y: 5.12, z: 2.58}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &-1516716684446691512
+>>>>>>> 8107c6db90fa5f9e70b34c3beb672d6a58612921
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
