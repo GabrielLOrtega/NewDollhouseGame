@@ -1,47 +1,60 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Grabber : MonoBehaviour
 {
     private GameObject selectedObject;
+    
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-      
-            {
-                if (!(selectedObject = null))
-                {
-                }
-                else if (hit.collider != null)
-                {
-                    if (!hit.collider.CompareTag("drag"))
-                    {
-                        return;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider != null)
+                {
+                    if (hit.collider.CompareTag("drag"))
+                    {
                         selectedObject = hit.collider.gameObject;
-                        Cursor.visible = false;
+                        selectedObject.layer = 2;
+                        //Cursor.visible = false;
                     }
                 }
-                else
 
+            }
+        }
 
         if (Input.GetMouseButtonUp(0))
-                {
-                    selectedObject = null;
-                }
+        {
+            if (selectedObject != null)
+            {
+                selectedObject.layer = 0;
+                selectedObject = null;
+            }
+            //Cursor.visible = true;
+        }
 
-                if (selectedObject != null)
+        if (selectedObject != null)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Plane plane = new Plane(Vector3.up, Vector3.zero);
-            float distance;
-            if (plane.Raycast(ray, out distance))
+            RaycastHit hit2;
+
+            if (Physics.Raycast(ray, out hit2))
             {
-                Vector3 worldPosition = ray.GetPoint(distance);
-                selectedObject.transform.position = worldPosition;
+                if(hit2.collider != null)
+                {
+                    if(hit2.collider.CompareTag("Floor"))
+                    {
+                        Vector3 worldPosition = hit2.point;
+                        worldPosition.y += .5f;
+                        selectedObject.transform.position = worldPosition;
+                    }
+                    
+
+                }
             }
         }
     }
