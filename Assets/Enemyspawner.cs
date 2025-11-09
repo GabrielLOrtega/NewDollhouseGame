@@ -14,6 +14,9 @@ public class Enemyspawner : MonoBehaviour
     private float swarmerInterval = 2.5f;
     [SerializeField]
     private List<GameObject> dustbunnies = new List<GameObject>();
+
+    public List<GameObject> Dustbunnies { get => dustbunnies; set => dustbunnies = value; }
+
     void Start()
     {
         StartCoroutine(spawnEnemy(swarmerInterval, swarmerprefab));
@@ -21,7 +24,7 @@ public class Enemyspawner : MonoBehaviour
 
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
-        while (dustbunnies.Count < 10) {
+        while (Dustbunnies.Count < 10) {
         yield return new WaitForSeconds(interval);
 
             int spawnCount = Random.Range(1, 4);
@@ -30,7 +33,7 @@ public class Enemyspawner : MonoBehaviour
                 GetRandomPosition(),
                 Quaternion.identity
             );
-            dustbunnies.Add(newEnemy);
+            Dustbunnies.Add(newEnemy);
         }
     }
 
