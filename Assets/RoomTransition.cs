@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,11 +30,11 @@ public class RoomTransition : MonoBehaviour
     void Update()
 <<<<<<< Updated upstream
 
-        /*
+        *//*
          * so like, thought process is that when each task gets completed the bool gets set to true and sets
          * the respective camera to active. 
          * If the task fails and you dont want the camera to move, just don't set the bool to true. 
-         * */
+         * *//*
 =======
 >>>>>>> Stashed changes
     {
@@ -88,3 +88,4 @@ public class RoomTransition : MonoBehaviour
     }
 }
 
+*/

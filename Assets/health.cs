@@ -1,62 +1,66 @@
-/*using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class health : MonoBehaviour
+public class Health : MonoBehaviour
 {
-    [SerializeField]
-    private int _maxHp = 100;
-    private int _Hp;
+    [SerializeField] private int _maxHp = 100;
+    private int _hp;
+
+    [SerializeField] private Animator animator; // 👈 Add Animator reference
 
     public int MaxH => _maxHp;
 
     public int Hp
     {
-        get => _Hp;
+        get => _hp;
         private set
         {
-            var isDamage = value < Hp;
-            _hp = Mathf.Clamp(value, min0, _maxHp);
+            bool isDamage = value < _hp;
+            _hp = Mathf.Clamp(value, 0, _maxHp);
+
             if (isDamage)
             {
                 Damaged?.Invoke(_hp);
-
             }
-        } else{
-            Healed?.Invoke(_Hp);
+            else
+            {
+                Healed?.Invoke(_hp);
+            }
+
+            if (_hp <= 0)
+            {
+                died?.Invoke();
+                TriggerLoseAnimation(); // 👈 Trigger animation
+            }
         }
-        if(_hp<=0){
-        died?.invoke();
     }
 
     public UnityEvent<int> Healed;
     public UnityEvent<int> Damaged;
     public UnityEvent died;
-   
 
-  private void Awake()
+    private void Awake()
     {
         _hp = _maxHp;
     }
+
     public void Damage(int amount) => Hp -= amount;
-   
-    public void Heal (int amount)
+
+    public void Heal(int amount) => Hp += amount;
+
+    public void HealFull() => Hp = _maxHp;
+
+    public void Kill() => Hp = 0;
+
+    public void Adjust(int value) => Hp = value;
+
+    private void TriggerLoseAnimation()
     {
-        Hp += amount;
-    }
-    public void Healful()
-    {
-        Hp =_maxHp
-    }
-    public void Kill()
-    {
-        Hp = 0;
-    }
-    public void adjust(int value)
-    {
-        Hp = vaule
+        if (animator != null)
+        {
+            animator.SetTrigger("Lose"); // 👈 Ensure "Lose" trigger exists in Animator
+        }
     }
 }
-
-*/
