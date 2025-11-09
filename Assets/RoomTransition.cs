@@ -17,60 +17,77 @@ public class RoomTransition : MonoBehaviour
     public GameObject laundryCamera;
     public GameObject kitchenCamera;
     public GameObject livingroomCamera;
-
+/*
     public Transform bedroomSpawn;
     public Transform bathroomSpawn;
     public Transform officeSpawn;
     public Transform laundrySpawn;
     public Transform kitchenSpawn;
     public Transform livingroomSpawn;
-
+*/
     public GameObject player;
 
+<<<<<<< HEAD
     [SerializeField] CleanScript cleanScript;
 
     void Update()
 
+=======
+    void Update()
+//<<<<<<< Updated upstream
+
+        /*
+         * so like, thought process is that when each task gets completed the bool gets set to true and sets
+         * the respective camera to active. 
+         * If the task fails and you dont want the camera to move, just don't set the bool to true. 
+         * */
+//=======
+//>>>>>>> Stashed changes
+>>>>>>> 8d3e3b5121b779ab22d056705e3085d02a9a2a46
     {
         if (bedroomtaskover)
         {
             bedroomCamera.SetActive(true);
-            TeleportPlayer(bedroomSpawn);
+            //TeleportPlayer(bedroomSpawn);
             bedroomtaskover = false; // prevent repeated teleport
         }
 
         if (bathroomtaskover)
         {
             bathroomCamera.SetActive(true);
-            TeleportPlayer(bathroomSpawn);
+            //TeleportPlayer(bathroomSpawn);
             bathroomtaskover = false;
         }
 
         if (officetaskover)
         {
             officeCamera.SetActive(true);
-            TeleportPlayer(officeSpawn);
+            //TeleportPlayer(officeSpawn);
             officetaskover = false;
         }
 
         if (laundrytaskover)
         {
             laundryCamera.SetActive(true);
-            TeleportPlayer(laundrySpawn);
+            //TeleportPlayer(laundrySpawn);
             laundrytaskover = false;
         }
 
         if (kitchentaskover)
         {
             kitchenCamera.SetActive(true);
+<<<<<<< HEAD
             cleanScript.Activate();
+=======
+            //TeleportPlayer(kitchenSpawn);
+>>>>>>> 8d3e3b5121b779ab22d056705e3085d02a9a2a46
             kitchentaskover = false;
         }
 
         if (livingroomtaskover)
         {
             livingroomCamera.SetActive(true);
-            TeleportPlayer(livingroomSpawn);
+            //TeleportPlayer(livingroomSpawn);
             livingroomtaskover = false;
         }
     }
