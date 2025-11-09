@@ -10,7 +10,6 @@ public class RoomTransition : MonoBehaviour
     public bool laundrytaskover = false;
     public bool kitchentaskover = false;
     public bool livingroomtaskover = false;
-
     public GameObject bedroomCamera;
     public GameObject bathroomCamera;
     public GameObject officeCamera;
@@ -18,23 +17,23 @@ public class RoomTransition : MonoBehaviour
     public GameObject kitchenCamera;
     public GameObject livingroomCamera;
 
-    public Transform bedroomSpawn;
-    public Transform bathroomSpawn;
-    public Transform officeSpawn;
-    public Transform laundrySpawn;
-    public Transform kitchenSpawn;
-    public Transform livingroomSpawn;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
-    public GameObject player;
-
+<<<<<<< HEAD
 <<<<<<< HEAD
     [SerializeField] CleanScript cleanScript;
 
     void Update()
 
 =======
+=======
+    // Update is called once per frame
+>>>>>>> parent of b92a2a1 (Merge branch 'main' of https://github.com/GabrielLOrtega/NewDollhouseGame)
     void Update()
-<<<<<<< Updated upstream
 
         *//*
          * so like, thought process is that when each task gets completed the bool gets set to true and sets
@@ -42,6 +41,7 @@ public class RoomTransition : MonoBehaviour
          * If the task fails and you dont want the camera to move, just don't set the bool to true. 
 <<<<<<< HEAD
          * */
+<<<<<<< HEAD
 //=======
 //>>>>>>> Stashed changes
 >>>>>>> 8d3e3b5121b779ab22d056705e3085d02a9a2a46
@@ -50,38 +50,30 @@ public class RoomTransition : MonoBehaviour
 =======
 >>>>>>> Stashed changes
 >>>>>>> 8107c6db90fa5f9e70b34c3beb672d6a58612921
+=======
+>>>>>>> parent of b92a2a1 (Merge branch 'main' of https://github.com/GabrielLOrtega/NewDollhouseGame)
     {
-        if (bedroomtaskover)
+        if(bedroomtaskover == true)
         {
             bedroomCamera.SetActive(true);
-            TeleportPlayer(bedroomSpawn);
-            bedroomtaskover = false; // prevent repeated teleport
         }
 
-        if (bathroomtaskover)
+        if (bathroomtaskover == true)
         {
             bathroomCamera.SetActive(true);
-            TeleportPlayer(bathroomSpawn);
-            bathroomtaskover = false;
-        }
-
-        if (officetaskover)
+        } 
+        if (officetaskover == true)
         {
             officeCamera.SetActive(true);
-            TeleportPlayer(officeSpawn);
-            officetaskover = false;
         }
-
-        if (laundrytaskover)
+        if (laundrytaskover == true)
         {
             laundryCamera.SetActive(true);
-            TeleportPlayer(laundrySpawn);
-            laundrytaskover = false;
         }
-
-        if (kitchentaskover)
+        if (kitchentaskover == true)
         {
             kitchenCamera.SetActive(true);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             cleanScript.Activate();
@@ -92,21 +84,20 @@ public class RoomTransition : MonoBehaviour
             TeleportPlayer(kitchenSpawn);
 >>>>>>> 8107c6db90fa5f9e70b34c3beb672d6a58612921
             kitchentaskover = false;
+=======
+>>>>>>> parent of b92a2a1 (Merge branch 'main' of https://github.com/GabrielLOrtega/NewDollhouseGame)
         }
-
-        if (livingroomtaskover)
+        if (livingroomtaskover == true)
         {
             livingroomCamera.SetActive(true);
-            TeleportPlayer(livingroomSpawn);
-            livingroomtaskover = false;
         }
-    }
 
-    void TeleportPlayer(Transform target)
-    {
-        player.transform.position = target.position;
-        player.transform.rotation = target.rotation;
+        //this is so jank
+        //but it works
     }
 }
+<<<<<<< HEAD
 
 */
+=======
+>>>>>>> parent of b92a2a1 (Merge branch 'main' of https://github.com/GabrielLOrtega/NewDollhouseGame)

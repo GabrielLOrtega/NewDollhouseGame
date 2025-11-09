@@ -3,20 +3,7 @@ guid: cee21ea176e11ad429e3f1d344f2db26
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - bedroomCamera: {instanceID: 0}
-  - bathroomCamera: {instanceID: 0}
-  - officeCamera: {instanceID: 0}
-  - laundryCamera: {instanceID: 0}
-  - kitchenCamera: {instanceID: 0}
-  - livingroomCamera: {instanceID: 0}
-  - bedroomSpawn: {fileID: 3766343962469929298, guid: fe8ff79b7fdd8ff48a291b0fd9ffd78a, type: 3}
-  - bathroomSpawn: {fileID: 7360503564763043805, guid: ac343a4dea0d07441b7a3962659737e8, type: 3}
-  - officeSpawn: {fileID: 4610519261463540278, guid: 48b282e14d1069145af1f263a72f2c23, type: 3}
-  - laundrySpawn: {fileID: 2873815909612363893, guid: 9508ef5602674e04fa47abb2cbc5af6f, type: 3}
-  - kitchenSpawn: {fileID: 3934548554785538979, guid: 8bcc370990bba8a47a4ccfe7cbd54cf3, type: 3}
-  - livingroomSpawn: {fileID: 6230067949541365842, guid: a42d65d507a5e064bbcc6b1a357af248, type: 3}
-  - player: {fileID: 7217111363944458631, guid: aee4ac6eaec4a8c429e915eb1e412ca2, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
