@@ -382,6 +382,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2986a3364cbdd7043bc13cc92825c09a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79b479a7c3f46884eb77d9b5f2096fc3, type: 2}
     - target: {fileID: 919132149155446097, guid: 2986a3364cbdd7043bc13cc92825c09a, type: 3}
       propertyPath: m_Name
       value: Lamp1 (2)
@@ -744,6 +748,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2986a3364cbdd7043bc13cc92825c09a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79b479a7c3f46884eb77d9b5f2096fc3, type: 2}
     - target: {fileID: 919132149155446097, guid: 2986a3364cbdd7043bc13cc92825c09a, type: 3}
       propertyPath: m_Name
       value: Lamp1 (1)
@@ -1626,6 +1634,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2986a3364cbdd7043bc13cc92825c09a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79b479a7c3f46884eb77d9b5f2096fc3, type: 2}
     - target: {fileID: 919132149155446097, guid: 2986a3364cbdd7043bc13cc92825c09a, type: 3}
       propertyPath: m_Name
       value: Lamp1
@@ -3269,6 +3281,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 130.972
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f0cc2f8c2725f5840acd5e1da10daa6d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60d37f85d4acb45488f31a8bcf77e2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: f0cc2f8c2725f5840acd5e1da10daa6d, type: 3}
       propertyPath: m_Name
       value: Chair
@@ -3502,6 +3518,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0c980431e4b9ca749a3a38fa3e12b7bc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff7de8ce306fb264cad08554e22b7462, type: 2}
     - target: {fileID: 919132149155446097, guid: 0c980431e4b9ca749a3a38fa3e12b7bc, type: 3}
       propertyPath: m_Name
       value: Broom
@@ -4249,6 +4269,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 62.426
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b8eedaf9c88cfd945b2a7d618e9bd8ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a86744dbf50c07840a277adfa1a02673, type: 2}
     - target: {fileID: 919132149155446097, guid: b8eedaf9c88cfd945b2a7d618e9bd8ea, type: 3}
       propertyPath: m_Name
       value: ArmChair
