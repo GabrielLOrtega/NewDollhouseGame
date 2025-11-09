@@ -29,7 +29,7 @@ public class RoomTransition : MonoBehaviour
         /*
          * so like, thought process is that when each task gets completed the bool gets set to true and sets
          * the respective camera to active. 
-         * If the task fails and you dont want the camera to move, just don't set this bool to true. 
+         * If the task fails and you dont want the camera to move, just don't set the bool to true. 
          * */
     {
         if(bedroomtaskover == true)
