@@ -6,6 +6,7 @@ TagManager:
   tags:
   - drag
   - Floor
+  - Damageable
   layers:
   - Default
   - TransparentFX

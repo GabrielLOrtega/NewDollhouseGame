@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using Cinemachine;
 
 public class PullableObject : MonoBehaviour
@@ -32,3 +32,4 @@ public class PullableObject : MonoBehaviour
         }
     }
 }
+*/
